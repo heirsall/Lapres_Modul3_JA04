@@ -133,7 +133,7 @@ menuju duckduckgo.com. </p>
 ````
 nano /etc/squid3/squid.conf
 ````
-<img src="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/squid.conf%20terakhir.png />
+<img src="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/squid.conf%20terakhir.png" />
 
 Saat ke google.com
 
@@ -153,3 +153,19 @@ http://10.151.36.5:5000, sebab subnet Informatics_wifi adalah milik tim Rocket. 
 untuk mempermudah trainer dan penduduk dalam menggunakan Proxy yaitu cukup dengan
 mengetikkan proxy.yy.com dan memasukkan port 8888.
 </p>
+
+● Install bind9 pada ARTICUNO `` apt-get install bind9 -y``
+● nano /etc/bind/named.conf.local
+
+````
+zone "proxy.a4.com"{
+	type master;
+	file "/etc/bind/jarkom/proxy.a4.com";
+	};
+````
+● ``mkdir /etc/bind/jarkom``
+● ``cp /etc/bind/db.local /etc/bind/jarkom/proxy.a4.com``
+● ``nano /etc/bind/jarkom/proxy.a7.com``
+
+<img src="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/no%2011.png"/>
+
