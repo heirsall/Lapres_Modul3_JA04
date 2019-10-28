@@ -125,12 +125,29 @@ nano /etc/squid3/squid.conf
 
 
 <p>Prof. Oak mendapat informasi dari salah satu trainer bahwa google.com merupakan search engine
-buatan tim Rocket. Oleh karena itu, Prof. Oak memerintahkan anda untuk membuat aturan (9) setiap
-ada koneksi dari subnet AJK (10.151.36.0/24) yang mengakses google.com akan langsung dialihkan
+buatan tim Rocket. Oleh karena itu, Prof. Oak memerintahkan anda untuk membuat aturan</p>
+<p>
+(9) setiap ada koneksi dari subnet AJK (10.151.36.0/24) yang mengakses google.com akan langsung dialihkan
 menuju duckduckgo.com. </p>
+
+````
+nano /etc/squid3/squid.conf
+````
+<img src="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/squid.conf%20terakhir.png />
+
+Saat ke google.com
+
+<img src="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/no%209.png"/>
+
+
+
  <p>(10) Selain itu, demi menjaga keamanan kota Pallet, anda diminta untuk
 mem-block setiap koneksi yang berasal dari subnet Informatics_wifi (10.151.252.0/22) menuju
 http://10.151.36.5:5000, sebab subnet Informatics_wifi adalah milik tim Rocket. </p>
+
+<img src="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/no%2010.png"/>
+
+
 <p>
 (11) Karena menurut Prof. Oak menghafalkan IP Proxy kota Pallet cukup merepotkan, kalian diminta
 untuk mempermudah trainer dan penduduk dalam menggunakan Proxy yaitu cukup dengan
