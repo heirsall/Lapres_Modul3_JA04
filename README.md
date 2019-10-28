@@ -64,7 +64,10 @@ otentikasi dengan format:
 Note: yy adalah nama kelompok masing-masing. Contoh : a1_moltres_user
 <p>
 ● install squid3 pada UML MOLTRES 
-``apt-get install squid3`` </p>
+ 
+``apt-get install squid3`` 
+
+</p>
 <p>
 ● install apache2-utils pada UML MOLTRES 
 
@@ -78,7 +81,7 @@ Note: yy adalah nama kelompok masing-masing. Contoh : a1_moltres_user
 <p>
 konfigurasikan nano /etc/squid3/squid.conf
 
-``
+````
 http_port 7777
 visible_hostname mewtwo
 
@@ -89,7 +92,8 @@ auth_param basic credentialsttl 2 hours
 auth_param basic casesensitive on
 acl USERS proxy_auth REQUIRED
 http_access allow USERS
-``
+
+````
 </p>
 
 <p>
