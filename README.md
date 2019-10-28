@@ -62,15 +62,20 @@ otentikasi dengan format:
 ● Password : yy_password
 
 Note: yy adalah nama kelompok masing-masing. Contoh : a1_moltres_user
-
+<p>
 ● install squid3 pada UML MOLTRES 
-``apt-get install squid3``
+``apt-get install squid3`` </p>
+<p>
 ● install apache2-utils pada UML MOLTRES 
 
-``apt-get install apache2-utils``
+``apt-get install apache2-utils`` </p>
+<p>
 ● Buat user dan password baru. 
-`` htpasswd -c /etc/squid3/passwd a4_moltres_user dan password: a4_password``
+ 
+``htpasswd -c /etc/squid3/passwd a4_moltres_user dan password: a4_password``
+ </p>
 
+<p>
 konfigurasikan nano /etc/squid3/squid.conf
 
 ``
@@ -85,11 +90,13 @@ auth_param basic casesensitive on
 acl USERS proxy_auth REQUIRED
 http_access allow USERS
 ``
+</p>
 
+<p>
 restart squid 
 
 ``service squid3 restart``
-
+</p>
 
 
 
