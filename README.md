@@ -1,13 +1,18 @@
 # Lapres_Modul3_JA04
 
-Pada topologi tersebut Prof. Oak memerintahkan anda untuk menjadikan PIKACHU sebagai router,
+<p>Pada topologi tersebut Prof. Oak memerintahkan anda untuk menjadikan PIKACHU sebagai router,
 ARTICUNO sebagai DNS Server, MEWTWO sebagai DHCP Server, MOLTRES sebagai Proxy
 Server dan UML lainnya sebagai Client.
 Pada materi sebelumnya, anda mempelajari cara mengkonfigurasi DHCP Server menggunakan router
 PIKACHU. Tetapi Prof. Oak meminta DHCP Server diletakkan pada MEWTWO bukan di router
 PIKACHU karena dapat memberatkan kerja router PIKACHU. Karena DHCP Server terletak di
 MEWTWO maka PIKACHU digunakan sebagai DHCP Relay.
-Kriteria lain yang diminta Prof. Oak pada topologi di atas adalah:
+ </p>
+ 
+ <p> Topologi yang dibuat </p> 
+ 
+ 
+ Kriteria lain yang diminta Prof. Oak pada topologi di atas adalah:
 1. Seluruh client TIDAK DIPERBOLEHKAN menggunakan konfigurasi IP Statis.
 2. (1) Client di subnet 2 mendapatkan peminjaman alamat IP dengan range 192.168.0.2 s.d.
 192.168.0.10 dan 192.168.0.20 s.d. 192.168.0.30 dengan netmask 255.255.255.0.
