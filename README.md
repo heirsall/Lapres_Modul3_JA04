@@ -11,6 +11,7 @@ MEWTWO maka PIKACHU digunakan sebagai DHCP Relay.
  
  <p> Topologi yang dibuat </p> 
  
+ <img src="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/topologi.jpg"/>
  
  Kriteria lain yang diminta Prof. Oak pada topologi di atas adalah:
 1. Seluruh client TIDAK DIPERBOLEHKAN menggunakan konfigurasi IP Statis.
