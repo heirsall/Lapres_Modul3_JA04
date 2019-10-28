@@ -62,6 +62,31 @@ otentikasi dengan format:
 ● Password : yy_password
 
 Note: yy adalah nama kelompok masing-masing. Contoh : a1_moltres_user
+
+● install squid3 pada UML MOLTRES ``apt-get install squid3``
+● install apache2-utils pada UML MOLTRES ``apt-get install apache2-utils``
+● Buat user dan password baru. 
+`` htpasswd -c /etc/squid3/passwd a4_moltres_user dan password: a4_password``
+konfigurasikan nano /etc/squid3/squid.conf
+
+``
+http_port 7777
+visible_hostname mewtwo
+
+auth_param basic program /usr/lib/squid3/ncsa_auth /etc/squid3/passwd
+auth_param basic children 5
+auth_param basic realm Proxy
+auth_param basic credentialsttl 2 hours
+auth_param basic casesensitive on
+acl USERS proxy_auth REQUIRED
+http_access allow USERS
+``
+
+restart squid ``service squid3 restart``
+
+
+
+
 Beberapa bulan setelah mendapatkan akses internet, para trainer (subnet 2) menjadi malas melatih
 pokemonnya karena terlalu asyik bermain Pokemon Go sehingga para pokemon menjadi lemah.
 Selain itu, para penduduk (subnet 3) menjadi malas untuk membuka toko mereka karena terlalu asyik
