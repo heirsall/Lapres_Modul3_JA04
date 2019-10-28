@@ -13,6 +13,8 @@ MEWTWO maka PIKACHU digunakan sebagai DHCP Relay.
  
  <img src="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/topologi.jpg"/>
  
+ 
+ 
  Kriteria lain yang diminta Prof. Oak pada topologi di atas adalah:
 1. Seluruh client TIDAK DIPERBOLEHKAN menggunakan konfigurasi IP Statis.
 2. (1) Client di subnet 2 mendapatkan peminjaman alamat IP dengan range 192.168.0.2 s.d.
@@ -25,6 +27,18 @@ subnet 3 mendapatkan peminjaman alamat IP selama 5 menit.
 IP ARTICUNO, 202.46.129.2, dan 10.151.36.7 secara otomatis.
 6. (5) Client PSYDUCK selalu mendapatkan IP 192.168.1.28, TANPA menggunakan
 konfigurasi IP Statis.
+
+<p> ubah /etc/dhcp/dhcpd.conf </p>
+
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/dhcpd.conf.png" />
+
+<p> nano /etc/network/interface di semua client dan samakan isinya </p>
+
+//////////////////////////////////////
+auto eth0
+iface eth0 inet dhcp
+//////////////////////////////////////
+
 
 Prof. Oak tidak ingin jaringan lokalnya terhubung ke Internet secara langsung. Ia ingin jaringan
 lokalnya melalui sebuah medium yang dapat menyaring dan membatasi sebelum terhubung ke
