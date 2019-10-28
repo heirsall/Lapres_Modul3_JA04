@@ -34,10 +34,19 @@ konfigurasi IP Statis.
 
 <p> nano /etc/network/interface di semua client dan samakan isinya </p>
 
-/*
-auto eth0
-iface eth0 inet dhcp
-*/
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/interfaces.png" />
+
+
+
+<p> cat etc/resolv.conf </p>
+
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/resolv.conf.png" />
+
+<p> ifconfig client client </p>
+
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/ifconfig.cubon.png" />
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/ifconfig.snorlax.png" />
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/ifconfig.psyduk.png" />
 
 
 Prof. Oak tidak ingin jaringan lokalnya terhubung ke Internet secara langsung. Ia ingin jaringan
