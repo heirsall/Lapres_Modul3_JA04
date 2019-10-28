@@ -63,10 +63,14 @@ otentikasi dengan format:
 
 Note: yy adalah nama kelompok masing-masing. Contoh : a1_moltres_user
 
-● install squid3 pada UML MOLTRES ``apt-get install squid3``
-● install apache2-utils pada UML MOLTRES ``apt-get install apache2-utils``
+● install squid3 pada UML MOLTRES 
+``apt-get install squid3``
+● install apache2-utils pada UML MOLTRES 
+
+``apt-get install apache2-utils``
 ● Buat user dan password baru. 
 `` htpasswd -c /etc/squid3/passwd a4_moltres_user dan password: a4_password``
+
 konfigurasikan nano /etc/squid3/squid.conf
 
 ``
