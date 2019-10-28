@@ -34,7 +34,7 @@ konfigurasi IP Statis.
 
 <p> nano /etc/network/interface di semua client dan samakan isinya </p>
 
-*/
+/*
 auto eth0
 iface eth0 inet dhcp
 */
