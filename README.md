@@ -82,7 +82,9 @@ acl USERS proxy_auth REQUIRED
 http_access allow USERS
 ``
 
-restart squid ``service squid3 restart``
+restart squid 
+
+``service squid3 restart``
 
 
 
