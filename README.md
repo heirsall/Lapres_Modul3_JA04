@@ -68,6 +68,9 @@ Selain itu, para penduduk (subnet 3) menjadi malas untuk membuka toko mereka kar
 menonton YouTube Atta Halilintar. Karena permasalahan tersebut, anda diminta membatasi akses
 internet untuk penduduk kota Pallet dengan pembatasan akses proxy sebagai berikut:
 
+``````
+tes tes
+```````
 ● (7) Untuk Client pada subnet 2 HANYA BISA mengakses internet pada hari Senin
 s.d. Jumat pukul 11.00 s.d. 13.00 WIB
 ● (8) Untuk Client pada subnet 3 HANYA BISA mengakses internet pada hari Senin
