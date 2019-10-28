@@ -110,13 +110,19 @@ Selain itu, para penduduk (subnet 3) menjadi malas untuk membuka toko mereka kar
 menonton YouTube Atta Halilintar. Karena permasalahan tersebut, anda diminta membatasi akses
 internet untuk penduduk kota Pallet dengan pembatasan akses proxy sebagai berikut:
 
-``````
-tes tes
-```````
 ● (7) Untuk Client pada subnet 2 HANYA BISA mengakses internet pada hari Senin
 s.d. Jumat pukul 11.00 s.d. 13.00 WIB
 ● (8) Untuk Client pada subnet 3 HANYA BISA mengakses internet pada hari Senin
 s.d. Jumat pukul 20.00 s.d. 07.00 WIB pada keesokan harinya.
+
+````
+nano /etc/squid3/squid.conf 
+
+````
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/squid.conf.png" />
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/squid.conf%202.png"/>
+<img src ="https://github.com/heirsall/Lapres_Modul3_JA04/blob/master/squid.conf%203.png" />
+
 
 Prof. Oak mendapat informasi dari salah satu trainer bahwa google.com merupakan search engine
 buatan tim Rocket. Oleh karena itu, Prof. Oak memerintahkan anda untuk membuat aturan (9) setiap
